@@ -133,6 +133,6 @@ Project ini mengikuti pola Clean Architecture untuk memisahkan tanggung jawab de
 
 ### Alur Data
 
-Request → Handler → validasi → Service → proses → Repository → Service → hasil ke Handler → Response
+Request → Handler (validasi body request) → Service (mengolah data untuk database) →  Repository (query untuk database) → Service (mengolah data untuk response) → hasil ke Handler → Response
 
 Struktur modular ini mendukung skalabilitas dan mempermudah pemeliharaan.
