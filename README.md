@@ -11,10 +11,10 @@ Project ini dibangun dengan menggunakan Clean Architecture dengan tujuan untuk m
 - **Commands**:
 
   - `go mod tidy`: Mengambil semua package yang diperlukan.
-  - `go run /cmd/app/main.go -config=".env"`: Menjalankan aplikasi dengan konfigurasi yang ditentukan.
-  - `go run /cmd/app/main.go -config=".env" migrate`: Melakukan migrasi table ke database.
-  - `go run /cmd/app/main.go -config=".env" seeder`: Melakukan Seeder data ke database.
-  - `go run /cmd/app/main.go -config=".env" seeder migrate`: Melakukan seeder dan migrate secara bersamaa
+  - `go run cmd/app/main.go -config=".env"`: Menjalankan aplikasi dengan konfigurasi yang ditentukan.
+  - `go run cmd/app/main.go -config=".env" migrate`: Melakukan migrasi table ke database.
+  - `go run cmd/app/main.go -config=".env" seeder`: Melakukan Seeder data ke database.
+  - `go run cmd/app/main.go -config=".env" seeder migrate`: Melakukan seeder dan migrate secara bersamaa
 
   Catatan: Program akan langsung berjalan ketika melakukan migrate atau seeder.
 
@@ -62,7 +62,7 @@ cp .env.example .env
 5. Jalankan aplikasi.
 
 ```bash
-go run /cmd/app/main.go -config=".env"
+go run cmd/app/main.go -config=".env"
 ```
 
 ### Pencerdasan Git
